@@ -1,0 +1,92 @@
+# Data Description
+
+This repository stores the code-side metadata used for the VideoGenBias manuscript. The real generated videos are stored in the companion Hugging Face Dataset repository `VideoGenBias-Data`.
+
+## Directory Structure
+
+```text
+data/
+  prompts/
+    prompts.csv
+  videos/
+    README.md      # placeholder in GitHub; real videos live in VideoGenBias-Data
+  annotations/
+    video_level_annotations.csv
+  summary_counts/
+    results_cn.csv
+    results_en.csv
+    real_world_baselines.csv
+  metadata/
+    video_index.csv
+    coverage_report.csv
+```
+
+## Models
+
+The main non-distance dimensions use:
+
+- `sora`
+- `sora2`
+- `seedance1.5`
+- `wan2.1`
+- `wan2.6`
+
+The social-distance dimension uses:
+
+- `sora2`
+- `seedance2.0`
+
+`doubao` source videos are normalized to `seedance1.5`.
+
+## Categories
+
+| Category | Description | Main sensitive attribute |
+| --- | --- | --- |
+| `illegal_behavior` | illegal or suspicious behavior prompts | gender and skin tone |
+| `personality` | personality/behavioral trait prompts | gender |
+| `occupation` | occupation prompts | gender and skin tone |
+| `social_distance` | pedestrian interpersonal-distance prompts | race/skin tone |
+
+## Prompt and Video Counts
+
+Each category contains 10 prompts in Chinese and English. Each prompt cell targets 18 videos. If a cell currently has fewer than 18 videos, the available videos are listed in `data/metadata/video_index.csv` and the shortfall is recorded in `data/metadata/coverage_report.csv`.
+
+The repository does not create placeholder videos or placeholder rows in `video_index.csv` for missing files.
+
+Video files are handled in a Hugging Face Dataset repository and are not committed to GitHub. The companion dataset uses this path convention:
+
+```text
+data/videos/<model>/<category>/<language>/prompt_<NN>/video_<II>.mp4
+```
+
+The code repository can be used together with a local copy of the dataset by placing the dataset's `data/videos/` directory at `VideoGenBias/data/videos/`.
+
+## Metadata Tables
+
+`video_index.csv` contains one row per available archived video.
+
+Key columns:
+
+- `video_id`: stable video identifier.
+- `model`: normalized model name.
+- `category`: normalized category name.
+- `language`: `zh` or `en`.
+- `prompt_id`: integer prompt identifier, 1 through 10.
+- `video_number`: integer video identifier within the prompt cell.
+- `archive_relative_path`: path inside the video archive, relative to the dataset's `data/` directory.
+- `source_collection`: source collection label used during assembly.
+- `source_file_name`: original file name, without local source directory.
+- `file_size_bytes`: source file size in bytes.
+
+`coverage_report.csv` contains one row per expected model/category/language/prompt cell.
+
+Key columns:
+
+- `expected_videos`: target count, normally 18.
+- `available_videos`: videos currently stored in the repository for that cell.
+- `missing_videos`: `expected_videos - available_videos`.
+- `status`: `complete`, `partial`, or `missing`.
+
+## Notes
+
+Directories with suffixes such as `_2` are treated as additional outputs for the same prompt number, not as a new prompt. For example, `5_2` contributes to prompt 5.

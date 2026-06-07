@@ -1,0 +1,7 @@
+model,n_prompts,mean_SPD,std_SPD
+Sora,31,-0.34,0.87
+Sora2,31,-0.3,0.83
+Wan,31,-0.53,0.56
+Wan 2.6,30,,
+Seedance 1.5,31,,
+Genie 3,30,,

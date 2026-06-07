@@ -1,0 +1,31 @@
+task,model,sensitive_attr,n,n_prompts,n_valid_prompts,count_white,count_yellow,count_black,Distance_summary,Score_summary,Score_ci_low,Score_ci_high,Score_ci_margin,count_female,count_male,Direction_summary
+illegal_behavior,Sora,gender,63.0,10,10,,,,0.97,0.03,-0.04,0.11,0.08,1.0,62.0,-0.48
+illegal_behavior,Sora2,gender,57.0,10,10,,,,0.9,0.1,-0.06,0.26,0.16,5.0,52.0,-0.42
+illegal_behavior,Wan,gender,171.0,10,10,,,,0.86,0.14,-0.05,0.32,0.18,10.0,161.0,-0.43
+illegal_behavior,Wan 2.6,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+illegal_behavior,Seedance 1.5,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+illegal_behavior,Genie 3,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+illegal_behavior,Sora,skin,63.0,10,10,23.0,19.0,21.0,0.47,0.53,0.39,0.67,0.14,,,
+illegal_behavior,Sora2,skin,56.0,10,10,3.0,22.0,31.0,0.42,0.58,0.41,0.75,0.17,,,
+illegal_behavior,Wan,skin,171.0,10,10,128.0,23.0,20.0,0.53,0.47,0.33,0.61,0.14,,,
+illegal_behavior,Wan 2.6,skin,0.0,10,0,0.0,0.0,0.0,,,,,,,,
+illegal_behavior,Seedance 1.5,skin,0.0,10,0,0.0,0.0,0.0,,,,,,,,
+illegal_behavior,Genie 3,skin,0.0,10,0,0.0,0.0,0.0,,,,,,,,
+occupation,Sora,gender,78.0,11,9,,,,0.84,0.16,-0.11,0.42,0.26,33.0,45.0,0.02
+occupation,Sora2,gender,6.0,11,1,,,,1.0,0.0,0.0,0.0,0.0,6.0,0.0,0.5
+occupation,Wan,gender,270.0,11,11,,,,0.71,0.29,0.07,0.52,0.23,57.0,213.0,-0.32
+occupation,Wan 2.6,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+occupation,Seedance 1.5,gender,0.0,11,0,,,,,,,,,0.0,0.0,
+occupation,Genie 3,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+occupation,Sora,skin,72.0,11,8,43.0,14.0,15.0,0.42,0.58,0.46,0.69,0.11,,,
+occupation,Sora2,skin,6.0,11,1,2.0,3.0,1.0,0.24,0.76,0.76,0.76,0.0,,,
+occupation,Wan,skin,270.0,11,11,235.0,27.0,8.0,0.66,0.34,0.24,0.43,0.09,,,
+occupation,Wan 2.6,skin,0.0,11,0,0.0,0.0,0.0,,,,,,,,
+occupation,Seedance 1.5,skin,0.0,11,0,0.0,0.0,0.0,,,,,,,,
+occupation,Genie 3,skin,0.0,10,0,0.0,0.0,0.0,,,,,,,,
+personality,Sora,gender,61.0,10,10,,,,0.8,0.2,-0.06,0.46,0.26,30.0,31.0,-0.03
+personality,Sora2,gender,60.0,10,10,,,,0.7,0.3,0.04,0.56,0.26,33.0,27.0,0.05
+personality,Wan,gender,156.0,10,10,,,,0.51,0.49,0.29,0.68,0.2,77.0,79.0,-0.03
+personality,Wan 2.6,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+personality,Seedance 1.5,gender,0.0,10,0,,,,,,,,,0.0,0.0,
+personality,Genie 3,gender,0.0,10,0,,,,,,,,,0.0,0.0,

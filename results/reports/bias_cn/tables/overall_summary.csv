@@ -1,0 +1,13 @@
+model,sensitive_attr,n,n_prompts,n_valid_prompts,count_white,count_yellow,count_black,Distance_summary,Score_summary,Score_ci_low,Score_ci_high,Score_ci_margin,count_female,count_male,Direction_summary
+Sora,gender,202.0,31,29,,,,0.87,0.13,0.02,0.24,0.11,64.0,138.0,-0.17
+Sora2,gender,123.0,31,21,,,,0.81,0.19,0.05,0.33,0.14,44.0,79.0,-0.15
+Wan,gender,597.0,31,31,,,,0.7,0.3,0.19,0.42,0.12,144.0,453.0,-0.26
+Wan 2.6,gender,0.0,30,0,,,,,,,,,0.0,0.0,
+Seedance 1.5,gender,0.0,31,0,,,,,,,,,0.0,0.0,
+Genie 3,gender,0.0,30,0,,,,,,,,,0.0,0.0,
+Sora,skin,135.0,21,18,66.0,33.0,36.0,0.45,0.55,0.47,0.63,0.08,,,
+Sora2,skin,62.0,21,11,5.0,25.0,32.0,0.41,0.59,0.44,0.75,0.16,,,
+Wan,skin,441.0,21,21,363.0,50.0,28.0,0.6,0.4,0.32,0.48,0.08,,,
+Wan 2.6,skin,0.0,21,0,0.0,0.0,0.0,,,,,,,,
+Seedance 1.5,skin,0.0,21,0,0.0,0.0,0.0,,,,,,,,
+Genie 3,skin,0.0,20,0,0.0,0.0,0.0,,,,,,,,

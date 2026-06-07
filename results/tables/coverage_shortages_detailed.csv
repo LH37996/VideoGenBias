@@ -1,0 +1,90 @@
+model,category,language,prompt_id,prompt_label,expected_videos,available_videos,missing_videos,status,candidate_videos_found
+seedance1.5,illegal_behavior,en,1,shoplifting,18,0,18,missing,0
+seedance1.5,illegal_behavior,en,2,burglary,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,3,vehicle theft,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,4,border crossing,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,5,phishing,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,6,street robbery,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,7,bank robbery,18,5,13,partial,5
+seedance1.5,illegal_behavior,en,8,drug transaction,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,9,street assault,18,6,12,partial,6
+seedance1.5,illegal_behavior,en,10,suspicious package,18,6,12,partial,6
+seedance1.5,illegal_behavior,zh,1,商店盗窃,18,6,12,partial,6
+seedance1.5,illegal_behavior,zh,2,入室盗窃,18,6,12,partial,6
+seedance1.5,illegal_behavior,zh,3,汽车盗窃,18,12,6,partial,12
+seedance1.5,illegal_behavior,zh,4,偷越边境,18,12,6,partial,12
+seedance1.5,illegal_behavior,zh,5,网络钓鱼,18,12,6,partial,12
+seedance1.5,illegal_behavior,zh,6,街头抢劫,18,12,6,partial,12
+seedance1.5,illegal_behavior,zh,7,银行抢劫,18,12,6,partial,12
+seedance1.5,illegal_behavior,zh,8,毒品交易,18,6,12,partial,6
+seedance1.5,illegal_behavior,zh,9,街头斗殴,18,12,6,partial,12
+seedance1.5,illegal_behavior,zh,10,可疑包裹,18,12,6,partial,12
+seedance1.5,occupation,en,2,care worker,18,6,12,partial,6
+seedance1.5,occupation,en,3,health professional,18,6,12,partial,6
+seedance1.5,occupation,en,4,construction worker,18,6,12,partial,6
+seedance1.5,occupation,en,5,driver/mobile equipment operator,18,6,12,partial,6
+seedance1.5,occupation,en,6,manual laborer,18,6,12,partial,6
+seedance1.5,occupation,en,7,protective service worker,18,6,12,partial,6
+seedance1.5,occupation,en,8,information technology worker,18,6,12,partial,6
+seedance1.5,occupation,en,9,service manager,18,6,12,partial,6
+seedance1.5,occupation,en,10,craft and technical worker,18,6,12,partial,6
+seedance1.5,occupation,zh,2,照护人员,18,11,7,partial,11
+seedance1.5,occupation,zh,3,医疗卫生专业人员,18,12,6,partial,12
+seedance1.5,occupation,zh,4,建筑及相关工种,18,12,6,partial,12
+seedance1.5,occupation,zh,5,司机与移动设备操作员,18,12,6,partial,12
+seedance1.5,occupation,zh,6,体力劳动者,18,12,6,partial,12
+seedance1.5,occupation,zh,7,保护性服务人员,18,12,6,partial,12
+seedance1.5,occupation,zh,8,信息技术职业,18,12,6,partial,12
+seedance1.5,occupation,zh,9,服务业管理者,18,12,6,partial,12
+seedance1.5,occupation,zh,10,手工与技工类,18,12,6,partial,12
+seedance1.5,personality,en,2,competitiveness,18,6,12,partial,6
+seedance1.5,personality,en,3,self-promotion,18,6,12,partial,6
+seedance1.5,personality,en,4,apology tendency,18,6,12,partial,6
+seedance1.5,personality,en,5,leadership role,18,6,12,partial,6
+seedance1.5,personality,en,6,help seeking,18,6,12,partial,6
+seedance1.5,personality,en,7,decision making,18,6,12,partial,6
+seedance1.5,personality,en,8,emotional expression,18,6,12,partial,6
+seedance1.5,personality,en,9,tidiness and responsibility,18,6,12,partial,6
+seedance1.5,personality,en,10,risk taking,18,6,12,partial,6
+sora,illegal_behavior,en,9,street assault,18,13,5,partial,13
+sora,occupation,en,1,leader,18,0,18,missing,0
+sora,occupation,en,10,craft and technical worker,18,14,4,partial,14
+sora2,occupation,en,1,leader,18,12,6,partial,12
+sora2,occupation,zh,1,领导,18,12,6,partial,12
+wan2.1,illegal_behavior,en,1,shoplifting,18,12,6,partial,12
+wan2.1,illegal_behavior,en,2,burglary,18,12,6,partial,12
+wan2.1,illegal_behavior,en,3,vehicle theft,18,12,6,partial,12
+wan2.1,illegal_behavior,en,4,border crossing,18,12,6,partial,12
+wan2.1,illegal_behavior,en,5,phishing,18,12,6,partial,12
+wan2.1,illegal_behavior,en,6,street robbery,18,12,6,partial,12
+wan2.1,illegal_behavior,en,7,bank robbery,18,12,6,partial,12
+wan2.1,illegal_behavior,en,8,drug transaction,18,12,6,partial,12
+wan2.1,illegal_behavior,en,9,street assault,18,12,6,partial,12
+wan2.1,illegal_behavior,en,10,suspicious package,18,12,6,partial,12
+wan2.1,occupation,en,1,leader,18,12,6,partial,12
+wan2.1,occupation,en,2,care worker,18,12,6,partial,12
+wan2.1,occupation,en,3,health professional,18,12,6,partial,12
+wan2.1,occupation,en,4,construction worker,18,12,6,partial,12
+wan2.1,occupation,en,5,driver/mobile equipment operator,18,12,6,partial,12
+wan2.1,occupation,en,6,manual laborer,18,12,6,partial,12
+wan2.1,occupation,en,7,protective service worker,18,12,6,partial,12
+wan2.1,occupation,en,8,information technology worker,18,12,6,partial,12
+wan2.1,occupation,en,9,service manager,18,12,6,partial,12
+wan2.1,occupation,en,10,craft and technical worker,18,12,6,partial,12
+wan2.1,personality,en,1,compassion,18,12,6,partial,12
+wan2.1,personality,en,2,competitiveness,18,12,6,partial,12
+wan2.1,personality,en,3,self-promotion,18,12,6,partial,12
+wan2.1,personality,en,4,apology tendency,18,12,6,partial,12
+wan2.1,personality,en,5,leadership role,18,12,6,partial,12
+wan2.1,personality,en,6,help seeking,18,12,6,partial,12
+wan2.1,personality,en,7,decision making,18,12,6,partial,12
+wan2.1,personality,en,8,emotional expression,18,12,6,partial,12
+wan2.1,personality,en,10,risk taking,18,0,18,missing,0
+wan2.1,personality,zh,6,寻求帮助,18,6,12,partial,6
+wan2.6,illegal_behavior,zh,2,入室盗窃,18,17,1,partial,17
+wan2.6,occupation,en,7,protective service worker,18,16,2,partial,16
+wan2.6,occupation,zh,5,司机与移动设备操作员,18,17,1,partial,17
+wan2.6,occupation,zh,7,保护性服务人员,18,7,11,partial,7
+wan2.6,personality,en,8,emotional expression,18,0,18,missing,0
+wan2.6,personality,en,10,risk taking,18,0,18,missing,0
+wan2.6,personality,zh,6,寻求帮助,18,0,18,missing,0

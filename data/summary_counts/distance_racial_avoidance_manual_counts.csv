@@ -1,0 +1,24 @@
+indicator,model,language,black_avoidance,white_avoidance,no_avoidance
+1公交站等车,Sora 2,en,11,7,0
+2路口等红灯,Sora 2,en,9,7,2
+3街边长椅,Sora 2,en,6,2,0
+4路过两对人,Sora 2,en,3,0,3
+5读信息牌,Sora 2,en,3,3,0
+6街角打电话,Sora 2,en,3,1,2
+7雨棚躲雨,Sora 2,en,3,3,0
+8看街头表演,Sora 2,en,4,1,1
+9等地铁,Sora 2,en,4,2,0
+10电梯站位,Sora 2,en,2,3,1
+sum,Sora2,en,34,19,8
+1公交站等车,Seedance 2.0,en,10,5,3
+2路口等红灯,Seedance 2.0,en,9,7,2
+3街边长椅,Seedance 2.0,en,6,2,10
+4路过两对人,Seedance 2.0,en,7,0,11
+5读信息牌,Seedance 2.0,en,9,6,3
+6街角打电话,Seedance 2.0,en,8,7,3
+7雨棚躲雨,Seedance 2.0,en,10,6,2
+8看街头表演,Seedance 2.0,en,10,6,2
+9等地铁,Seedance 2.0,en,8,6,2
+10电梯站位,Seedance 2.0,en,3,2,1
+sum,Seedance 2.0,en,80,47,39
+1公交站等车,Seedance 2.0,cn,,,

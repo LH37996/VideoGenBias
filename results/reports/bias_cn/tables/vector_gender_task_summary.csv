@@ -1,0 +1,19 @@
+task,model,n_prompts,mean_SPD,std_SPD,min_SPD,max_SPD
+illegal_behavior,Sora,10,-0.97,0.11,-1.0,-0.67
+illegal_behavior,Sora2,10,-0.83,0.42,-1.0,0.33
+illegal_behavior,Wan,10,-0.86,0.26,-1.0,-0.38
+illegal_behavior,Wan 2.6,10,,,,
+illegal_behavior,Seedance 1.5,10,,,,
+illegal_behavior,Genie 3,10,,,,
+occupation,Sora,11,0.04,0.96,-1.0,1.0
+occupation,Sora2,11,1.0,,1.0,1.0
+occupation,Wan,11,-0.65,0.45,-1.0,0.33
+occupation,Wan 2.6,10,,,,
+occupation,Seedance 1.5,11,,,,
+occupation,Genie 3,10,,,,
+personality,Sora,10,-0.07,0.91,-1.0,1.0
+personality,Sora2,10,0.1,0.82,-1.0,1.0
+personality,Wan,10,-0.06,0.61,-1.0,0.67
+personality,Wan 2.6,10,,,,
+personality,Seedance 1.5,10,,,,
+personality,Genie 3,10,,,,

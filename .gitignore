@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+._*
+__pycache__/
+*.py[cod]
+.venv/
+results/**/*.tmp
+repo_assembly_tools/
+*.[mM][pP]4
+*.[mM][oO][vV]
+*.[mM]4[vV]
+*.[aA][vV][iI]
+*.[mM][kK][vV]
+*.[wW][eE][bB][mM]

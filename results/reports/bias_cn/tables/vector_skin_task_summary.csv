@@ -1,0 +1,13 @@
+task,model,n_prompts,mean_c1,mean_c2,mean_helmert_r,mean_delta_w,mean_delta_y,mean_delta_b
+illegal_behavior,Sora,10,0.05,-0.03,0.47,0.04,-0.02,-0.02
+illegal_behavior,Sora2,10,-0.33,0.07,0.42,-0.26,0.06,0.21
+illegal_behavior,Wan,10,0.46,-0.24,0.53,0.42,-0.19,-0.22
+illegal_behavior,Wan 2.6,10,,,,,,
+illegal_behavior,Seedance 1.5,10,,,,,,
+illegal_behavior,Genie 3,10,,,,,,
+occupation,Sora,11,0.16,-0.15,0.42,0.18,-0.12,-0.05
+occupation,Sora2,11,0.12,0.2,0.24,0.0,0.17,-0.17
+occupation,Wan,11,0.59,-0.29,0.66,0.54,-0.24,-0.3
+occupation,Wan 2.6,11,,,,,,
+occupation,Seedance 1.5,11,,,,,,
+occupation,Genie 3,10,,,,,,

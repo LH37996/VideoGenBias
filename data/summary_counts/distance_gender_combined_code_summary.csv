@@ -1,0 +1,5 @@
+combined_code,total_partner_sides,from_white_side,from_black_side,black_avoidance_count,white_avoidance_count,no_avoidance_count,black_avoidance_share,white_avoidance_share,no_avoidance_share,analysis_note
+FF,20,5,15,9,9,2,0.45,0.45,0.1,descriptive_only_two_partner_sides_per_video
+FM,32,21,11,15,13,4,0.46875,0.40625,0.125,descriptive_only_two_partner_sides_per_video
+MF,31,16,15,20,7,4,0.6451612903225806,0.22580645161290322,0.12903225806451613,descriptive_only_two_partner_sides_per_video
+MM,39,19,20,24,9,6,0.6153846153846154,0.23076923076923078,0.15384615384615385,descriptive_only_two_partner_sides_per_video

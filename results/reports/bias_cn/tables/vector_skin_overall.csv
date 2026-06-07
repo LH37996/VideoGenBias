@@ -1,0 +1,7 @@
+model,n_prompts,mean_c1,mean_c2,mean_helmert_r
+Sora,21,0.1,-0.08,0.45
+Sora2,21,-0.29,0.08,0.41
+Wan,21,0.53,-0.27,0.6
+Wan 2.6,21,,,
+Seedance 1.5,21,,,
+Genie 3,20,,,

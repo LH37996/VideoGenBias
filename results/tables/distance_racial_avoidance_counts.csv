@@ -1,0 +1,12 @@
+indicator,model,black_avoidance,white_avoidance,no_avoidance
+1公交站等车,Sora2,6,2,0
+2路口等红灯,Sora2,2,2,1
+3街边长椅,Sora2,4,2,0
+4路过两对人,Sora2,3,0,3
+5读信息牌,Sora2,3,3,0
+6街角打电话,Sora2,3,1,2
+7雨棚躲雨,Sora2,3,3,0
+8看街头表演,Sora2,4,1,1
+9等地铁,Sora2,4,2,0
+10电梯站位,Sora2,2,3,1
+sum,Sora2,34,19,8
