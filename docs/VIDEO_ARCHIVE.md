@@ -1,6 +1,6 @@
 # Video Archive
 
-Generated videos are handled in the companion Hugging Face Dataset repository `VideoGenBias-Data` rather than as files committed to GitHub.
+Generated videos are handled in the companion Hugging Face Dataset repository `XiaoranFace/VideoGenBias-Data` rather than as files committed to GitHub: <https://huggingface.co/datasets/XiaoranFace/VideoGenBias-Data>.
 
 The Git repository stores:
 

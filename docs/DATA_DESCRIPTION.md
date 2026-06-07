@@ -1,6 +1,6 @@
 # Data Description
 
-This repository stores the code-side metadata used for the VideoGenBias manuscript. The real generated videos are stored in the companion Hugging Face Dataset repository `VideoGenBias-Data`.
+This repository stores the code-side metadata used for the VideoGenBias manuscript. The real generated videos are stored in the companion Hugging Face Dataset repository `XiaoranFace/VideoGenBias-Data`: <https://huggingface.co/datasets/XiaoranFace/VideoGenBias-Data>.
 
 ## Directory Structure
 

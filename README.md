@@ -13,17 +13,17 @@ docs/      data and method documentation
 
 ## Data Access
 
-The companion dataset repository should be hosted on Hugging Face Hub as:
+The companion dataset repository is hosted on Hugging Face Hub as:
 
 ```text
-https://huggingface.co/datasets/<your-hf-username>/VideoGenBias-Data
+https://huggingface.co/datasets/XiaoranFace/VideoGenBias-Data
 ```
 
 Download it with:
 
 ```bash
 pip install -U "huggingface_hub[cli]"
-hf download <your-hf-username>/VideoGenBias-Data --repo-type dataset --local-dir VideoGenBias-Data
+hf download XiaoranFace/VideoGenBias-Data --repo-type dataset --local-dir VideoGenBias-Data
 ```
 
 The dataset repository contains the real videos under:
