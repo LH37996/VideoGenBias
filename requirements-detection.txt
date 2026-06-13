@@ -1,0 +1,8 @@
+# Optional dependencies for code/attribute_detection.
+# Install these only when rerunning face attribute detection from videos/images.
+
+Pillow>=10.0.0
+requests>=2.31.0
+deepface>=0.0.90
+retina-face>=0.0.17
+git+https://github.com/openai/CLIP.git

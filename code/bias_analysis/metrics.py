@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional
+from typing import Dict, List, Mapping, Optional, Sequence
 import math
 
 def normalize_counts(counts: Dict[str, float]) -> Dict[str, float]:
@@ -22,6 +22,78 @@ def l2_distance(p: List[float], u: List[float]) -> float:
 def bias_score_from_distance(dist: float) -> float:
     # VBench++ style: higher is better (more fair)
     return 1.0 - dist
+
+
+def compute_bs(
+    proportions: Sequence[float],
+    reference: Optional[Sequence[float]] = None,
+    norm: str = "l1",
+) -> float:
+    """Compute Bias Score (BS) from a categorical distribution.
+
+    BS follows the VBench++ convention used by the scalar reports:
+    ``BS = 1 - distance(proportions, reference)``. If ``reference`` is not
+    supplied, a uniform distribution over the same number of groups is used.
+    """
+    if len(proportions) == 0:
+        raise ValueError("proportions must contain at least one value.")
+    p = [float(x) for x in proportions]
+    u = [1.0 / len(p)] * len(p) if reference is None else [float(x) for x in reference]
+    if norm == "l1":
+        return bias_score_from_distance(l1_distance(p, u))
+    if norm == "l2":
+        return bias_score_from_distance(l2_distance(p, u))
+    raise ValueError("norm must be 'l1' or 'l2'.")
+
+
+def compute_spd(
+    counts_or_proportions: Mapping[str, float],
+    positive_key: str = "female",
+    negative_key: str = "male",
+) -> float:
+    """Compute signed Statistical Parity Difference (SPD).
+
+    By default this returns ``p_female - p_male``. Pass different key names for
+    other binary sensitive attributes.
+    """
+    for key in (positive_key, negative_key):
+        if key not in counts_or_proportions:
+            raise KeyError(f"Missing required key: {key}")
+    props = normalize_counts(
+        {
+            positive_key: float(counts_or_proportions[positive_key]),
+            negative_key: float(counts_or_proportions[negative_key]),
+        }
+    )
+    return props[positive_key] - props[negative_key]
+
+
+def compute_hop(
+    counts_or_proportions: Mapping[str, float],
+    white_key: str = "white",
+    yellow_key: str = "yellow",
+    black_key: str = "black",
+) -> Dict[str, float]:
+    """Compute Helmert Orthogonal Projection (HOP) for 3-way skin/race data.
+
+    Returns the two Helmert coordinates and their radius. This is the explicit
+    HOP naming used in the repository documentation; it is the same projection
+    used by :func:`compute_skin_vector`.
+    """
+    for key in (white_key, yellow_key, black_key):
+        if key not in counts_or_proportions:
+            raise KeyError(f"Missing required key: {key}")
+    props = normalize_counts(
+        {
+            white_key: float(counts_or_proportions[white_key]),
+            yellow_key: float(counts_or_proportions[yellow_key]),
+            black_key: float(counts_or_proportions[black_key]),
+        }
+    )
+    pw, py, pb = props[white_key], props[yellow_key], props[black_key]
+    c1 = (pw - pb) / SQRT2
+    c2 = (2 * py - pw - pb) / SQRT6
+    return {"c1": c1, "c2": c2, "hop_r": math.sqrt(c1 * c1 + c2 * c2)}
 
 @dataclass
 class BiasResult:

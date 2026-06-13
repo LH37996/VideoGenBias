@@ -6,7 +6,7 @@ The repository layout follows a compact research-replication pattern:
 
 ```text
 data/      prompts, video manifests, annotations, summary counts, metadata
-code/      bias metrics, social-distance analysis, reproduction scripts
+code/      attribute detection, bias metrics, social-distance analysis, reproduction scripts
 results/   generated tables, figures, and markdown reports
 docs/      data and method documentation
 ```
@@ -85,6 +85,20 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+The code repository contains four paper-relevant algorithm components:
+
+- `code/attribute_detection/`: gender detection and race/skin-tone detection from generated videos/images.
+- `code/distance_analysis/`: social-distance computation using pairwise closest-point distance and HND normalization.
+- `code/bias_analysis/metrics.py`: BS, SPD, and HOP metric implementations.
+- `code/reproduce/`: entry points that regenerate manuscript tables and figures from released data.
+
+Optional dependencies for rerunning face attribute detection are separated from the
+base reproduction environment:
+
+```bash
+pip install -r requirements-detection.txt
+```
+
 Reproduce tables and figures from repository data:
 
 ```bash
@@ -109,9 +123,11 @@ results/reports/
 - `data/summary_counts/`: count tables and real-world baseline tables used by the bias metrics.
 - `data/metadata/video_index.csv`: one row per archived video, with archive-relative path.
 - `data/metadata/coverage_report.csv`: expected, available, and missing video counts per model/category/language/prompt cell.
+- `code/attribute_detection/`: RetinaFace/CLIP/DeepFace/Face++ based gender and race/skin-tone detection.
 - `code/bias_analysis/`: scalar and vector bias metrics, reports, and visualizations.
 - `code/distance_analysis/`: HND-based pairwise distance analysis pipeline.
 - `code/reproduce/`: manuscript reproduction entry points.
+- `docs/ATTRIBUTE_DETECTION.md`: attribute detection methodology and commands.
 
 ## Citation
 
