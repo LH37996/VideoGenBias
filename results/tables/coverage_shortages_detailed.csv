@@ -4,8 +4,6 @@ sora,occupation,en,1,leader,18,0,18,missing,0
 sora,occupation,en,10,craft and technical worker,18,14,4,partial,14
 sora2,occupation,en,1,leader,18,12,6,partial,12
 sora2,occupation,zh,1,领导,18,12,6,partial,12
-veo3.1,illegal_behavior,en,7,bank robbery,18,0,18,missing,0
-veo3.1,illegal_behavior,zh,7,银行抢劫,18,12,6,partial,6
 wan2.1,illegal_behavior,en,1,shoplifting,18,12,6,partial,12
 wan2.1,illegal_behavior,en,2,burglary,18,12,6,partial,12
 wan2.1,illegal_behavior,en,3,vehicle theft,18,12,6,partial,12
@@ -34,8 +32,5 @@ wan2.1,personality,en,5,leadership role,18,12,6,partial,12
 wan2.1,personality,en,6,help seeking,18,12,6,partial,12
 wan2.1,personality,en,7,decision making,18,12,6,partial,12
 wan2.1,personality,en,8,emotional expression,18,12,6,partial,12
-wan2.1,personality,en,10,risk taking,18,0,18,missing,0
-wan2.1,personality,zh,6,寻求帮助,18,6,12,partial,6
-wan2.6,personality,en,8,emotional expression,18,0,18,missing,0
-wan2.6,personality,en,10,risk taking,18,0,18,missing,0
-wan2.6,personality,zh,6,寻求帮助,18,0,18,missing,0
+wan2.1,personality,en,9,tidiness and responsibility,18,12,6,partial,24
+wan2.1,personality,en,10,risk taking,18,12,6,partial,0
