@@ -35,12 +35,15 @@ The main non-distance dimensions use:
 
 The social-distance dimension uses:
 
+- `genie3`
 - `sora2`
 - `seedance2.0`
+- `veo3.1`
 
-`doubao` source videos are normalized to `seedance1.5`. `genie3` and
-`veo3.1` are included for the three non-distance dimensions. Social-distance
-folders for other models are not included in this release.
+`doubao` source videos are normalized to `seedance1.5`. `seedance2.0` videos
+outside social distance, and social-distance folders for models other than
+`genie3`, `sora2`, `seedance2.0`, and `veo3.1`, are not included in this
+release.
 
 ## Categories
 
