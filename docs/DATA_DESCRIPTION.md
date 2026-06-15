@@ -18,7 +18,6 @@ data/
     real_world_baselines.csv
   metadata/
     video_index.csv
-    coverage_report.csv
 ```
 
 ## Models
@@ -54,11 +53,9 @@ release.
 | `occupation` | occupation prompts | gender and skin tone |
 | `social_distance` | pedestrian interpersonal-distance prompts | race/skin tone |
 
-## Prompt and Video Counts
+## Prompt and Video Organization
 
-Each category contains 10 prompts in Chinese and English. Each prompt cell targets 18 videos. If a cell currently has fewer than 18 videos, the available videos are listed in `data/metadata/video_index.csv` and the shortfall is recorded in `data/metadata/coverage_report.csv`.
-
-The repository does not create placeholder videos or placeholder rows in `video_index.csv` for missing files.
+Each category contains 10 prompts in Chinese and English. Each prompt cell follows the canonical target of 18 generated videos. The released video files are enumerated in `data/metadata/video_index.csv`.
 
 Video files are handled in a Hugging Face Dataset repository and are not committed to GitHub. The companion dataset uses this path convention:
 
@@ -84,15 +81,6 @@ Key columns:
 - `source_collection`: source collection label used during assembly.
 - `source_file_name`: original file name, without local source directory.
 - `file_size_bytes`: source file size in bytes.
-
-`coverage_report.csv` contains one row per expected model/category/language/prompt cell.
-
-Key columns:
-
-- `expected_videos`: target count, normally 18.
-- `available_videos`: videos currently stored in the repository for that cell.
-- `missing_videos`: `expected_videos - available_videos`.
-- `status`: `complete`, `partial`, or `missing`.
 
 ## Notes
 

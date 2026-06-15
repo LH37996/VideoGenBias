@@ -1,3 +1,0 @@
-model,category,language,prompt_id,expected_videos,available_videos,missing_videos,status,candidate_videos_found
-sora,illegal_behavior,en,9,18,13,5,partial,13
-sora,occupation,en,10,18,14,4,partial,14

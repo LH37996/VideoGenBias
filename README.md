@@ -68,11 +68,10 @@ Rules used in this release:
 
 - `doubao` videos are treated as `seedance1.5`.
 - Directories such as `5_2` and `9_2` are continuations of prompt 5 and prompt 9.
-- Each prompt contains up to 18 videos. If fewer than 18 are currently available, the dataset repository stores the available videos only.
-- `data/metadata/coverage_report.csv` records cells with fewer than 18 videos.
+- Each prompt is organized with the canonical target of 18 videos.
 - The non-distance dimensions include `genie3`, `sora`, `sora2`, `seedance1.5`, `veo3.1`, `wan2.1`, and `wan2.6`.
 - The social-distance experiment includes `genie3`, `sora2`, `seedance2.0`, and `veo3.1`.
-- `seedance2.0` videos outside social distance, and social-distance folders for other models, are not part of this repository and are not counted as missing.
+- `seedance2.0` videos outside social distance, and social-distance folders for other models, are outside the scope of this release.
 
 The companion dataset repository stores `data/metadata/video_index.csv`, whose `relative_path` column gives the actual path for each available video. This code repository keeps lightweight metadata and analysis code so GitHub remains easy to clone.
 
@@ -125,7 +124,6 @@ results/reports/
 - `data/annotations/video_level_annotations.csv`: video-level annotations used in the distance analysis.
 - `data/summary_counts/`: count tables and real-world baseline tables used by the bias metrics.
 - `data/metadata/video_index.csv`: one row per archived video, with archive-relative path.
-- `data/metadata/coverage_report.csv`: expected, available, and missing video counts per model/category/language/prompt cell.
 - `code/attribute_detection/`: RetinaFace/CLIP/DeepFace/Face++ based gender and race/skin-tone detection.
 - `code/bias_analysis/`: scalar and vector bias metrics, reports, and visualizations.
 - `code/distance_analysis/`: HND-based pairwise distance analysis pipeline.

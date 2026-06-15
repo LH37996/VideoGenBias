@@ -37,39 +37,6 @@ def set_plot_font() -> None:
         return
 
 
-def save_coverage_figure() -> None:
-    coverage_path = DATA_DIR / "metadata" / "coverage_report.csv"
-    if not coverage_path.exists():
-        print(f"[skip] Missing {coverage_path}")
-        return
-    df = pd.read_csv(coverage_path)
-    TABLES_DIR.mkdir(parents=True, exist_ok=True)
-    shortages = df[df["missing_videos"] > 0].copy()
-    shortages.to_csv(TABLES_DIR / "coverage_shortages.csv", index=False)
-
-    missing = (
-        df.groupby(["model", "category"], as_index=False)["missing_videos"]
-        .sum()
-        .sort_values(["model", "category"])
-    )
-    if missing.empty:
-        return
-
-    labels = [f"{row.model}\n{row.category}" for row in missing.itertuples()]
-    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
-    fig, ax = plt.subplots(figsize=(max(8, len(labels) * 0.45), 4.5))
-    ax.bar(range(len(labels)), missing["missing_videos"], color="#4c78a8")
-    ax.set_xticks(range(len(labels)))
-    ax.set_xticklabels(labels, rotation=45, ha="right", fontsize=8)
-    ax.set_ylabel("Missing videos")
-    ax.set_title("Current Video Coverage Gaps")
-    fig.tight_layout()
-    out = FIGURES_DIR / "coverage_missing_videos.png"
-    fig.savefig(out, dpi=200)
-    plt.close(fig)
-    print(f"[ok] Wrote {out}")
-
-
 def save_bias_summary_figure() -> None:
     metric_paths = sorted(TABLES_DIR.glob("bias_*_bias_scalar_metrics.csv"))
     if not metric_paths:
@@ -123,7 +90,6 @@ def save_distance_gap_figure() -> None:
 def main() -> None:
     set_plot_font()
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
-    save_coverage_figure()
     save_bias_summary_figure()
     save_distance_gap_figure()
 
