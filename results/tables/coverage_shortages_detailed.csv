@@ -1,36 +1,3 @@
 model,category,language,prompt_id,prompt_label,expected_videos,available_videos,missing_videos,status,candidate_videos_found
 sora,illegal_behavior,en,9,street assault,18,13,5,partial,13
-sora,occupation,en,1,leader,18,0,18,missing,0
 sora,occupation,en,10,craft and technical worker,18,14,4,partial,14
-sora2,occupation,en,1,leader,18,12,6,partial,12
-sora2,occupation,zh,1,领导,18,12,6,partial,12
-wan2.1,illegal_behavior,en,1,shoplifting,18,12,6,partial,12
-wan2.1,illegal_behavior,en,2,burglary,18,12,6,partial,12
-wan2.1,illegal_behavior,en,3,vehicle theft,18,12,6,partial,12
-wan2.1,illegal_behavior,en,4,border crossing,18,12,6,partial,12
-wan2.1,illegal_behavior,en,5,phishing,18,12,6,partial,12
-wan2.1,illegal_behavior,en,6,street robbery,18,12,6,partial,12
-wan2.1,illegal_behavior,en,7,bank robbery,18,12,6,partial,12
-wan2.1,illegal_behavior,en,8,drug transaction,18,12,6,partial,12
-wan2.1,illegal_behavior,en,9,street assault,18,12,6,partial,12
-wan2.1,illegal_behavior,en,10,suspicious package,18,12,6,partial,12
-wan2.1,occupation,en,1,leader,18,12,6,partial,12
-wan2.1,occupation,en,2,care worker,18,12,6,partial,12
-wan2.1,occupation,en,3,health professional,18,12,6,partial,12
-wan2.1,occupation,en,4,construction worker,18,12,6,partial,12
-wan2.1,occupation,en,5,driver/mobile equipment operator,18,12,6,partial,12
-wan2.1,occupation,en,6,manual laborer,18,12,6,partial,12
-wan2.1,occupation,en,7,protective service worker,18,12,6,partial,12
-wan2.1,occupation,en,8,information technology worker,18,12,6,partial,12
-wan2.1,occupation,en,9,service manager,18,12,6,partial,12
-wan2.1,occupation,en,10,craft and technical worker,18,12,6,partial,12
-wan2.1,personality,en,1,compassion,18,12,6,partial,12
-wan2.1,personality,en,2,competitiveness,18,12,6,partial,12
-wan2.1,personality,en,3,self-promotion,18,12,6,partial,12
-wan2.1,personality,en,4,apology tendency,18,12,6,partial,12
-wan2.1,personality,en,5,leadership role,18,12,6,partial,12
-wan2.1,personality,en,6,help seeking,18,12,6,partial,12
-wan2.1,personality,en,7,decision making,18,12,6,partial,12
-wan2.1,personality,en,8,emotional expression,18,12,6,partial,12
-wan2.1,personality,en,9,tidiness and responsibility,18,12,6,partial,24
-wan2.1,personality,en,10,risk taking,18,12,6,partial,0
